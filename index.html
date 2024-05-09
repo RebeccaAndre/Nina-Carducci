@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Nina Carducci -<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"> Photographe Professionnelle</title> <!-- Ajout d'un élément title pour le SEO et la navigation -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Préconnexion aux polices Google -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Les polices et CSS sont chargées avec une priorité inférieure -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"></noscript>
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body> 
     <div class="top-header">
         <h3 class="name">Nina Carducci</h3>
         <div class="nav">
@@ -24,7 +21,8 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+                    <!-- Ajout de rel="noopener noreferrer" pour améliorer la sécurité et la performance -->
+                        <a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener noreferrer">
                         <img src="assets/images/instagram.png" alt="Page Instagram de Nina Carducci"> <!-- Ajout d'une description alt pour l'image -->
                     </a>
                 </li>
@@ -38,19 +36,35 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Deuxième image"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Troisième image"></button>
             </div>
+            <!-- Utilisation de srcset et sizes pour optimiser le chargement des images en fonction de la taille de l'écran -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+                     srcset="
+                            ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-small.webp 500w,
+                            ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-medium.webp 1000w,
+                            ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-large.webp 1500w"
+                         sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
                          class="d-block w-100" 
                          alt="Vue urbaine capturée par Ryoji Iwata"> <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+                     srcset="
+                             ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-small.webp 500w,
+                             ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-medium.webp 1000w,
+                             ./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-large.webp 1500w"
+                         sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
                          class="d-block w-100"
                          alt="Paysage naturel par Nicholas Green"> <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+                        srcset="
+                                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-small.webp 500w,
+                                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-medium.webp 1000w,
+                                ./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-large.webp 1500w"
+                         sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"       
                          class="d-block w-100"
                          alt="Moment intime capturé par Edward Cisneros"> <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
                 </div>
