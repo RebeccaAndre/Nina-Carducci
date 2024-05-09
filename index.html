@@ -2,24 +2,19 @@
 <html lang="fr"> <!-- Ajout de l'attribut lang pour spécifier la langue du document -->
 <head>
     <meta charset="UTF-8">
-    <title>Nina Carducci - Photographe Professionnelle</title> <!-- Ajout d'un élément title pour le SEO et la navigation -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>Nina Carducci -<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"> Photographe Professionnelle</title> <!-- Ajout d'un élément title pour le SEO et la navigation -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Préconnexion aux polices Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./assets/maugallery.js"></script>
-    <script src="./assets/scripts.js"></script>
-
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-<script src="./assets/maugallery.js" defer></script>
-<script src="./assets/scripts.js" defer></script>
+    <!-- Les polices et CSS sont chargées avec une priorité inférieure -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body>
+<body> 
     <div class="top-header">
         <h3 class="name">Nina Carducci</h3>
         <div class="nav">
@@ -199,5 +194,15 @@
             </div>
         </div>
     </div>
+    <!-- footer -->
+    <footer>
+        <p>© 2021 Nina Carducci - Photographe Professionnelle</p>
+    </footer>
+
+       <!-- Scripts avec l'attribut defer pour retarder leur exécution jusqu'à ce que le document soit analysé -->
+    <script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/maugallery.js" defer></script>
+    <script src="./assets/scripts.js" defer></script>
 </body>
 </html>
