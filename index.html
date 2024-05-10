@@ -13,7 +13,6 @@
       name="keywords"
       content="photographe Paris, photographie professionnelle, mariages, portraits"
     />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,22 +22,16 @@
       media="print"
       onload="this.media='all'"
     />
-    <noscript
-      ><link
+    <noscript>
+      <link
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
         rel="stylesheet"
-    /></noscript>
-    <link
-      rel="stylesheet"
-      href="./assets/bootstrap/bootstrap.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"
-    /></noscript>
-    <link rel="stylesheet" href="./dist/css/style.css" />
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <!-- Mise à jour du code HTML: Modification de la balise <link> qui référence du fichier CSS pour qu'elle utilise le chemin du fichier CSS minifié -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -75,30 +68,34 @@
       name="twitter:image"
       content="https://rebeccaandre.github.io/Nina-Carducci/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-large.webp"
     />
+
+    <!-- Intégration des données structurées pour le référencement local de Nina Carducci -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "image": "https://rebeccaandre.github.io/Nina-Carducci/assets/images/nina-large.webp",
+        "name": "Nina Carducci",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "0556677889",
+        "openingHours": "Lundi au Vendredi, 10h-19h",
+        "priceRange": "Retouches - 50€/photo, Shooting - 350€/demi journée, Album A4 - 400€",
+        "url": "http://ninacarducci.com/",
+        "sameAs": "https://www.instagram.com/ninacarducci.photo/?hl=fr",
+        "jobTitle": "Photographe"
+      }
+    </script>
   </head>
 
+  <!-- Ajout de la balise body pour le contenu du site -->
   <body>
-    <!-- Ajout de la balise body pour le contenu du site -->
-
-    <!-- Début du bloc Schema.org pour le référencement local: Intégration des données structurées pour le référencement local de Nina Carducci-->
-    <div itemscope itemtype="http://schema.org/ProfessionalService">
-      <span itemprop="name">Nina Carducci - Photographe</span>
-      <div
-        itemprop="address"
-        itemscope
-        itemtype="http://schema.org/PostalAddress"
-      >
-        <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-        <span itemprop="addressLocality">Bordeaux</span>,
-        <span itemprop="postalCode">33200</span>
-        <span itemprop="addressCountry">FR</span>
-      </div>
-      <span itemprop="telephone">05 56 67 78 89</span>
-      <meta itemprop="openingHours" content="Mo-Fr 10:00-19:00" />
-      <a itemprop="url" href="https://ninacarducci.com">Site Web</a>
-    </div>
-    <!-- Fin du bloc Schema.org pour le référencement local -->
-
     <header>
       <!-- Ajout de la balise header pour l'en-tête du site -->
       <div class="top-header">
@@ -156,7 +153,7 @@
               aria-label="Troisième image"
             ></button>
           </div>
-          <!-- Utilisation de srcset et sizes pour optimiser le chargement des images en fonction de la taille de l'écran -->
+          <!-- Utilisation de srcset et sizes pour optimiser le chargement des images en fonction de la taille de l'écran/Carrousel avec lazy loading sur chaque image -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -168,6 +165,7 @@
                 "
                 sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
                 class="d-block w-100"
+                loading="lazy"
                 alt="Vue urbaine capturée par Ryoji Iwata"
               />
               <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
@@ -182,6 +180,7 @@
                 "
                 sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
                 class="d-block w-100"
+                loading="lazy"
                 alt="Paysage naturel par Nicholas Green"
               />
               <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
@@ -196,6 +195,7 @@
                 "
                 sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
                 class="d-block w-100"
+                loading="lazy"
                 alt="Moment intime capturé par Edward Cisneros"
               />
               <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
@@ -228,6 +228,7 @@
       <!-- Ajout de la balise main pour le contenu principal du site -->
       <div id="about">
         <div class="picture left">
+          <!-- Image dans la section À propos avec lazy loading/ Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
           <img
             src="./assets/images/nina.webp"
             srcset="
@@ -236,9 +237,9 @@
               ./assets/images/nina-large.webp  1500w
             "
             sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+            loading="lazy"
             alt="Portrait de Nina Carducci, photographe professionnelle"
           />
-          <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
         </div>
         <div id="about-me">
           <h3 class="about-me__title">A propos de moi</h3>
@@ -266,7 +267,7 @@
         <div class="container py-3">
           <!-- Suppression du style inline de la div .gallery qui avait style="display: none" -->
           <div class="gallery">
-            <!-- Optimisation des images en format WebP pour une meilleure performance de chargement -->
+            <!-- Optimisation des images en format WebP pour une meilleure performance de chargement/Images de la galerie avec lazy loading  -->
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -277,6 +278,7 @@
                 ./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Aaron Paul en concert, capturant l'énergie de la performance live"
             />
             <img
@@ -289,6 +291,7 @@
                 ./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Ali Morshedlou dans un cadre professionnel, illustrant le dynamisme des entreprises modernes"
             />
             <img
@@ -301,6 +304,7 @@
                 ./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Jason Goodman dans un environnement d'entreprise, mettant en avant le professionnalisme et l'innovation"
             />
             <img
@@ -313,6 +317,7 @@
                 ./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Moment intime capturé lors d'un mariage par Hannah Busing, mettant en lumière l'amour et la joie"
             />
             <img
@@ -325,6 +330,7 @@
                 ./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Portrait profond par Ade Tunji, révélant les traits et l'émotion du sujet"
             />
             <img
@@ -337,6 +343,7 @@
                 ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Jakob Owens capturant un moment joyeux lors d'un mariage, illustrant le bonheur partagé"
             />
             <img
@@ -349,6 +356,7 @@
                 ./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Nino Van Prattenburg offrant un aperçu intime à travers un portrait unique"
             />
             <img
@@ -362,6 +370,7 @@
               "
               sizes="(max-width: 600px)
             500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Austin Neill immortalisant l'énergie brute d'un concert en live"
             />
             <img
@@ -374,6 +383,7 @@
                 ./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-large.webp  1500w
               "
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Mateus Campos Felipe montrant la collaboration en entreprise avec une photo dynamique et engageante"
             />
           </div>
@@ -476,6 +486,7 @@
             </form>
           </div>
           <div class="picture right">
+            <!-- Image dans le pied de page avec lazy loading -->
             <img
               src="./assets/images/camera.webp"
               srcset="
@@ -485,6 +496,7 @@
               "
               sizes="(max-width: 600px)
             500px, (max-width: 900px) 1000px, 1500px"
+              loading="lazy"
               alt="Caméra vintage
             illustrant le métier de la photographie"
             />
