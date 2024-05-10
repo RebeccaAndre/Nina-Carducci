@@ -3,11 +3,17 @@
   <!-- Ajout de l'attribut lang pour spécifier la langue du document -->
   <head>
     <meta charset="UTF-8" />
-    <title>
-      Nina Carducci -<link rel="stylesheet"
-      href="./assets/bootstrap/bootstrap.css"> Photographe Professionnelle
-    </title>
-    <!-- Ajout d'un élément title pour le SEO et la navigation -->
+    <!-- Ajout d'un élément title, des balises meta adéquates pour le titre, la description et les mots-clés pour le SEO et la navigation -->
+    <title>Nina Carducci - Photographe Professionnelle</title>
+    <meta
+      name="description"
+      content="Nina Carducci, photographe professionnelle basée à Paris, spécialisée dans les mariages, portraits et événements."
+    />
+    <meta
+      name="keywords"
+      content="photographe Paris, photographie professionnelle, mariages, portraits"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,10 +39,66 @@
     /></noscript>
     <link rel="stylesheet" href="./dist/css/style.css" />
     <!-- Mise à jour du code HTML: Modification de la balise <link> qui référence du fichier CSS pour qu'elle utilise le chemin du fichier CSS minifié -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://ninacarducci.com/" />
+    <meta
+      property="og:author"
+      content="Nina Carducci - Photographe Professionnelle"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez le portfolio de Nina Carducci, photographe professionnelle basée à Bordeaux. Spécialisée dans les portraits, mariages, et événements d'entreprise."
+    />
+    <meta
+      property="og:image"
+      content="https://rebeccaandre.github.io/Nina-Carducci/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-large.webp"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://rebeccaandre.github.io/Nina-Carducci/"
+    />
+    <meta
+      name="twitter:author"
+      content="Nina Carducci - Photographe Professionnelle"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez le portfolio de Nina Carducci, photographe professionnelle basée à Bordeaux. Spécialisée dans les portraits, mariages, et événements d'entreprise."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rebeccaandre.github.io/Nina-Carducci/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-large.webp"
+    />
   </head>
 
   <body>
     <!-- Ajout de la balise body pour le contenu du site -->
+
+    <!-- Début du bloc Schema.org pour le référencement local: Intégration des données structurées pour le référencement local de Nina Carducci-->
+    <div itemscope itemtype="http://schema.org/ProfessionalService">
+      <span itemprop="name">Nina Carducci - Photographe</span>
+      <div
+        itemprop="address"
+        itemscope
+        itemtype="http://schema.org/PostalAddress"
+      >
+        <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
+        <span itemprop="addressLocality">Bordeaux</span>,
+        <span itemprop="postalCode">33200</span>
+        <span itemprop="addressCountry">FR</span>
+      </div>
+      <span itemprop="telephone">05 56 67 78 89</span>
+      <meta itemprop="openingHours" content="Mo-Fr 10:00-19:00" />
+      <a itemprop="url" href="https://ninacarducci.com">Site Web</a>
+    </div>
+    <!-- Fin du bloc Schema.org pour le référencement local -->
+
     <header>
       <!-- Ajout de la balise header pour l'en-tête du site -->
       <div class="top-header">
