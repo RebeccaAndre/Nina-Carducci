@@ -17,10 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      media="all"
     />
     <noscript>
       <link
@@ -31,7 +30,7 @@
 
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <!-- Mise à jour du code HTML: Modification de la balise <link> qui référence du fichier CSS pour qu'elle utilise le chemin du fichier CSS minifié -->
-    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -118,8 +117,10 @@
                 <img
                   src="assets/images/instagram.png"
                   alt="Page Instagram de Nina Carducci"
+                  width="20"
+                  height="20"
                 />
-                <!-- Ajout d'une description alt pour l'image -->
+                <!-- Ajout d'une description alt pour l'image + + Ajout des attributs width et height aux balises <img> -->
               </a>
             </li>
           </ul>
@@ -153,7 +154,7 @@
               aria-label="Troisième image"
             ></button>
           </div>
-          <!-- Utilisation de srcset et sizes pour optimiser le chargement des images en fonction de la taille de l'écran/Carrousel avec lazy loading sur chaque image -->
+          <!-- Utilisation de srcset et sizes pour optimiser le chargement des images en fonction de la taille de l'écran/Carrousel avec lazy loading sur chaque image + Ajout des attributs width et height aux balises <img> -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -167,8 +168,10 @@
                 class="d-block w-100"
                 loading="lazy"
                 alt="Vue urbaine capturée par Ryoji Iwata"
+                width="1921"
+                height="888"
               />
-              <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
+              <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO + Ajout des attributs width et height aux balises <img> -->
             </div>
             <div class="carousel-item">
               <img
@@ -182,8 +185,10 @@
                 class="d-block w-100"
                 loading="lazy"
                 alt="Paysage naturel par Nicholas Green"
+                width="1921"
+                height="888"
               />
-              <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
+              <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO + Ajout des attributs width et height aux balises <img> -->
             </div>
             <div class="carousel-item">
               <img
@@ -197,8 +202,10 @@
                 class="d-block w-100"
                 loading="lazy"
                 alt="Moment intime capturé par Edward Cisneros"
+                width="1440"
+                height="888"
               />
-              <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
+              <!-- Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO + Ajout des attributs width et height aux balises <img> -->
             </div>
           </div>
           <button
@@ -228,7 +235,7 @@
       <!-- Ajout de la balise main pour le contenu principal du site -->
       <div id="about">
         <div class="picture left">
-          <!-- Image dans la section À propos avec lazy loading/ Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO -->
+          <!-- Image dans la section À propos avec lazy loading/ Conversion des images en WebP et ajout d'alt text pour l'accessibilité et le SEO + Ajout des attributs width et height aux balises <img> -->
           <img
             src="./assets/images/nina.webp"
             srcset="
@@ -239,6 +246,8 @@
             sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
             loading="lazy"
             alt="Portrait de Nina Carducci, photographe professionnelle"
+            width="400"
+            height="558"
           />
         </div>
         <div id="about-me">
@@ -267,7 +276,7 @@
         <div class="container py-3">
           <!-- Suppression du style inline de la div .gallery qui avait style="display: none" -->
           <div class="gallery">
-            <!-- Optimisation des images en format WebP pour une meilleure performance de chargement/Images de la galerie avec lazy loading  -->
+            <!-- Optimisation des images en format WebP pour une meilleure performance de chargement/Images de la galerie avec lazy loading + Ajout des attributs width et height aux balises <img> -->
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
@@ -280,6 +289,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Aaron Paul en concert, capturant l'énergie de la performance live"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -293,6 +304,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Ali Morshedlou dans un cadre professionnel, illustrant le dynamisme des entreprises modernes"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -306,6 +319,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Jason Goodman dans un environnement d'entreprise, mettant en avant le professionnalisme et l'innovation"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Mariages"
@@ -319,6 +334,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Moment intime capturé lors d'un mariage par Hannah Busing, mettant en lumière l'amour et la joie"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Portrait"
@@ -332,6 +349,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Portrait profond par Ade Tunji, révélant les traits et l'émotion du sujet"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Mariages"
@@ -345,6 +364,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Jakob Owens capturant un moment joyeux lors d'un mariage, illustrant le bonheur partagé"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Portrait"
@@ -358,6 +379,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Nino Van Prattenburg offrant un aperçu intime à travers un portrait unique"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Concert"
@@ -372,6 +395,8 @@
             500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Austin Neill immortalisant l'énergie brute d'un concert en live"
+              width="424"
+              height="424"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -385,6 +410,8 @@
               sizes="(max-width: 600px) 500px, (max-width: 900px) 1000px, 1500px"
               loading="lazy"
               alt="Mateus Campos Felipe montrant la collaboration en entreprise avec une photo dynamique et engageante"
+              width="424"
+              height="424"
             />
           </div>
         </div>
@@ -486,7 +513,7 @@
             </form>
           </div>
           <div class="picture right">
-            <!-- Image dans le pied de page avec lazy loading -->
+            <!-- Image dans le pied de page avec lazy loading + Ajout des attributs width et height aux balises <img> -->
             <img
               src="./assets/images/camera.webp"
               srcset="
@@ -499,6 +526,8 @@
               loading="lazy"
               alt="Caméra vintage
             illustrant le métier de la photographie"
+              width="392"
+              height="1000"
             />
           </div>
         </div>
@@ -508,12 +537,12 @@
     <!-- Scripts "minifiés" avec l'attribut defer pour retarder leur exécution jusqu'à ce que le document soit analysé -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
-      defer
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
+      defer
     ></script>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
-    <script src="./dist/js/maugallery.js" defer></script>
-    <script src="./dist/js/scripts.js" defer></script>
+    <script src="./dist/js/maugallery.min.js" defer></script>
+    <script src="./dist/js/scripts.min.js" defer></script>
   </body>
 </html>
